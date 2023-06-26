@@ -18,12 +18,6 @@
 	});
 </script>
 
-<svelte:head>
-	{#each projects as project}
-		<link rel="preload" as="image" href={project.img} />
-	{/each}
-</svelte:head>
-
 <div class="flex flex-col box gap-8">
 	<h1>Projects</h1>
 	<div class=" flex flex-wrap place-content-center gap-20 md:gap-6">

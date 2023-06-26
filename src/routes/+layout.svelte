@@ -9,11 +9,13 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { gsap } from 'gsap';
 
+	let main;
+
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
 		ScrollTrigger.create({
-			trigger: '.main',
+			trigger: main,
 			start: 'top+=600px top',
 			end: 'bottom bottom-=1000px',
 			onEnter: function () {
@@ -45,9 +47,9 @@
 			>
 				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
 			>
-			<div class="main flex flex-col">
+			<main bind:this={main} class="main flex flex-col">
 				<slot />
-			</div>
+			</main>
 		</div>
 	</div>
 {/if}
