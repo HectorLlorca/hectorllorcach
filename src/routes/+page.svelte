@@ -4,12 +4,8 @@
 	import Skills from '../components/skills.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
-
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	let tl = gsap.timeline({});
 
-	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
 		gsap.to('.section', {
 			opacity: 1,
@@ -19,10 +15,9 @@
 				end: 'center center'
 			}
 		});
-		gsap.registerPlugin(TextPlugin);
 		tl.to('.hi', { duration: 3, text: 'Hola, soy Héctor', ease: '', repeat: 1, yoyo: true });
-		tl.to('.hi2', { opacity: 1, duration: 1.5, ease: '', repeat: -1, yoyo: true }, '<2');
-		tl.to('.hi', { duration: 3, text: 'Hi, im Héctor', ease: '' }, '>2.2');
+		tl.to('.hi2', { opacity: 1, duration: 1.5, ease: '', repeat: -1, yoyo: true }, '<1');
+		tl.to('.hi', { duration: 3, text: 'Hi, im Héctor', ease: '' }, '>3.2');
 	});
 </script>
 

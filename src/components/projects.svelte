@@ -2,8 +2,6 @@
 	import { onMount } from 'svelte';
 	import { projects } from '../lib/projects-data';
 	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
 		gsap.to('.box img', {
 			height: '100%',

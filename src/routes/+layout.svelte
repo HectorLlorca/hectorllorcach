@@ -4,14 +4,17 @@
 	import Icon from '@iconify/svelte';
 	/** @type {import('./$types').LayoutData} */
 	export let data;
-	import '../app.css';
 	import { onMount } from 'svelte';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import '../app.css';
 
 	let main;
 
 	gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(TextPlugin);
+
 	onMount(() => {
 		ScrollTrigger.create({
 			trigger: main,
