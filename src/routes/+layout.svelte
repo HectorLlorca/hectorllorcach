@@ -21,19 +21,15 @@
 			start: 'top+=600px top',
 			end: 'bottom bottom-=1000px',
 			onEnter: function () {
-				// Aquí puedes colocar la función que deseas ejecutar cuando se haga el desplazamiento de 800 px
 				gsap.to('.scrollbtn', { opacity: 1 });
 			},
 			onLeave: function () {
-				// Aquí puedes colocar la función que deseas ejecutar cuando se haga el desplazamiento de 800 px
 				gsap.to('.scrollbtn', { opacity: 0 });
 			},
 			onLeaveBack: function () {
-				// Aquí puedes colocar la función que deseas ejecutar cuando se haga el desplazamiento de 800 px
 				gsap.to('.scrollbtn', { opacity: 0 });
 			},
 			onEnterBack: function () {
-				// Aquí puedes colocar la función que deseas ejecutar cuando se haga el desplazamiento de 800 px
 				gsap.to('.scrollbtn', { opacity: 1 });
 			}
 		});
@@ -41,7 +37,7 @@
 </script>
 
 {#if $theme}
-	<div data-theme={$theme} class="flex flex-col">
+	<div data-theme={$theme} class="flex flex-col" bind:this={main}>
 		<div class="flex flex-col lg:max-w-[1680px] mx-auto p-3 lg:p-0 lg:py-3 relative">
 			<button
 				on:click={() => scrollTo(0, 0)}
@@ -49,8 +45,9 @@
 			>
 				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
 			>
-			<main bind:this={main} class="main flex flex-col" />
+			<main class="flex flex-col">
+				<slot />
+			</main>
 		</div>
 	</div>
 {/if}
-<slot />
