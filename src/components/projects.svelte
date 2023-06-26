@@ -3,8 +3,8 @@
 	import { projects } from '../lib/projects-data';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
 		gsap.to('.box img', {
 			height: '100%',
 			opacity: 1,

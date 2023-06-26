@@ -9,8 +9,8 @@
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	let tl = gsap.timeline({});
 
+	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
 		gsap.to('.section', {
 			opacity: 1,
 			scrollTrigger: {

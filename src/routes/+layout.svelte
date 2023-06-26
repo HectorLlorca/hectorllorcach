@@ -11,9 +11,8 @@
 
 	let main;
 
+	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
-
 		ScrollTrigger.create({
 			trigger: main,
 			start: 'top+=600px top',

@@ -12,8 +12,8 @@
 		skill = newSkill;
 	};
 
+	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
 		gsap.to('.icon', {
 			scrollTrigger: {
 				trigger: '.box',
