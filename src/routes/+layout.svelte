@@ -10,34 +10,34 @@
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import '../app.css';
 
-	let main;
+	// let main;
 
 	gsap.registerPlugin(ScrollTrigger);
 	gsap.registerPlugin(TextPlugin);
 
-	onMount(() => {
-		ScrollTrigger.create({
-			trigger: main,
-			start: 'top+=600px top',
-			end: 'bottom bottom-=1000px',
-			onEnter: function () {
-				gsap.to('.scrollbtn', { opacity: 1 });
-			},
-			onLeave: function () {
-				gsap.to('.scrollbtn', { opacity: 0 });
-			},
-			onLeaveBack: function () {
-				gsap.to('.scrollbtn', { opacity: 0 });
-			},
-			onEnterBack: function () {
-				gsap.to('.scrollbtn', { opacity: 1 });
-			}
-		});
-	});
+	// onMount(() => {
+	// 	ScrollTrigger.create({
+	// 		trigger: main,
+	// 		start: 'top+=600px top',
+	// 		end: 'bottom bottom-=1000px',
+	// 		onEnter: function () {
+	// 			gsap.to('.scrollbtn', { opacity: 1 });
+	// 		},
+	// 		onLeave: function () {
+	// 			gsap.to('.scrollbtn', { opacity: 0 });
+	// 		},
+	// 		onLeaveBack: function () {
+	// 			gsap.to('.scrollbtn', { opacity: 0 });
+	// 		},
+	// 		onEnterBack: function () {
+	// 			gsap.to('.scrollbtn', { opacity: 1 });
+	// 		}
+	// 	});
+	// });
 </script>
 
 {#if $theme}
-	<div data-theme={$theme} class="flex flex-col" bind:this={main}>
+	<div data-theme={$theme} class="flex flex-col">
 		<div class="flex flex-col lg:max-w-[1680px] mx-auto p-3 lg:p-0 lg:py-3 relative">
 			<button
 				on:click={() => scrollTo(0, 0)}
