@@ -10,30 +10,30 @@
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import '../app.css';
 
-	// let main;
+	let main;
 
 	gsap.registerPlugin(ScrollTrigger);
 	gsap.registerPlugin(TextPlugin);
 
-	// onMount(() => {
-	// 	ScrollTrigger.create({
-	// 		trigger: main,
-	// 		start: 'top+=600px top',
-	// 		end: 'bottom bottom-=1000px',
-	// 		onEnter: function () {
-	// 			gsap.to('.scrollbtn', { opacity: 1 });
-	// 		},
-	// 		onLeave: function () {
-	// 			gsap.to('.scrollbtn', { opacity: 0 });
-	// 		},
-	// 		onLeaveBack: function () {
-	// 			gsap.to('.scrollbtn', { opacity: 0 });
-	// 		},
-	// 		onEnterBack: function () {
-	// 			gsap.to('.scrollbtn', { opacity: 1 });
-	// 		}
-	// 	});
-	// });
+	onMount(() => {
+		ScrollTrigger.create({
+			trigger: main,
+			start: 'top+=600px top',
+			end: 'bottom bottom-=1000px',
+			onEnter: function () {
+				gsap.to('.scrollbtn', { opacity: 1 });
+			},
+			onLeave: function () {
+				gsap.to('.scrollbtn', { opacity: 0 });
+			},
+			onLeaveBack: function () {
+				gsap.to('.scrollbtn', { opacity: 0 });
+			},
+			onEnterBack: function () {
+				gsap.to('.scrollbtn', { opacity: 1 });
+			}
+		});
+	});
 </script>
 
 {#if $theme}
@@ -45,7 +45,7 @@
 			>
 				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
 			>
-			<main class="flex flex-col">
+			<main bind:this={main} class="flex flex-col">
 				<slot />
 			</main>
 		</div>
