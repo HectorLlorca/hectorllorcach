@@ -33,7 +33,7 @@
 			bind:value={skill}
 		/>
 	</div>
-	<div class="flex flex-wrap gap-6">
+	<div class="flex flex-wrap gap-12 justify-center">
 		<div class="flex flex-col gap-3">
 			<h4>Frontend</h4>
 			<div class="flex flex-wrap w-[20ch] gap-1">

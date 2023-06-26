@@ -13,7 +13,7 @@
 		gsap.registerPlugin(ScrollTrigger);
 
 		ScrollTrigger.create({
-			trigger: 'main',
+			trigger: '.main',
 			start: 'top+=600px top',
 			end: 'bottom bottom-=1000px',
 			onEnter: function () {
@@ -45,9 +45,9 @@
 			>
 				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
 			>
-			<main class="flex flex-col">
+			<div class="main flex flex-col">
 				<slot />
-			</main>
+			</div>
 		</div>
 	</div>
 {/if}
