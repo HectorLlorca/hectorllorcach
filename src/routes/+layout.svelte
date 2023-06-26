@@ -37,17 +37,18 @@
 </script>
 
 {#if $theme}
-	<div data-theme={$theme} class="flex flex-col">
-		<div class="flex flex-col lg:max-w-[1680px] mx-auto p-3 lg:p-0 lg:py-3 relative">
-			<button
-				on:click={() => scrollTo(0, 0)}
-				class="scrollbtn btn uppercase fixed bottom-5 right-5 bg-green-400 hover:bg-green-600 hover:scale-110 rounded opacity-0 z-50"
-			>
-				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
-			>
-			<main bind:this={main} class="flex flex-col">
-				<slot />
-			</main>
-		</div>
+	<div
+		class="flex flex-col min-w-full lg:max-w-[1680px] mx-auto p-3 lg:p-0 lg:py-3 relative"
+		data-theme={$theme}
+	>
+		<button
+			on:click={() => scrollTo(0, 0)}
+			class="scrollbtn btn uppercase fixed bottom-5 right-5 bg-green-400 hover:bg-green-600 hover:scale-110 rounded opacity-0 z-50"
+		>
+			<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
+		>
+		<main bind:this={main} class="flex flex-col w-full">
+			<slot />
+		</main>
 	</div>
 {/if}

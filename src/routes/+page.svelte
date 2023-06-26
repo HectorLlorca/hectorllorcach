@@ -31,7 +31,7 @@
 	<Swap />
 
 	<div class="section opacity-0">
-		<div class=" flex flex-col gap-8 sm:w-[70ch] sm:mx-auto">
+		<div class=" flex flex-col gap-8 sm:max-w-[70ch] sm:mx-auto">
 			<h1>About Me</h1>
 			<p class="">
 				Web programmer with great passion towards the IT world. I'm always working on new projects,
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 	<div class="section opacity-0">
-		<div class=" flex flex-col gap-8 sm:w-[70ch] sm:mx-auto">
+		<div class=" flex flex-col gap-8 sm:max-w-[70ch] sm:mx-auto">
 			<h1>Studies</h1>
 			<div class="flex flex-col gap-4">
 				<div class="flex flex-col">

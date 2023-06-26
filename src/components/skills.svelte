@@ -22,7 +22,7 @@
 	});
 </script>
 
-<div class=" section flex flex-col gap-8 sm:w-[70ch] sm:mx-auto">
+<div class=" section flex flex-col gap-8 sm:max-w-[70ch] sm:mx-auto">
 	<div class="flex place-items-center gap-6">
 		<h1>Skills</h1>
 		<input
@@ -95,7 +95,7 @@
 			<h4>Others</h4>
 			<div class="flex flex-wrap gap-1 w-[20ch]">
 				<button class="" on:click={() => (skill = 'Figma')}>
-					<Icon width={55} class="cursor-pointer icon hover:scale-110" icon="logos:figma" />
+					<Icon width={35} class="cursor-pointer icon hover:scale-110" icon="logos:figma" />
 				</button>
 				<button class="" on:click={() => (skill = 'Visual Studio Code')}>
 					<Icon
