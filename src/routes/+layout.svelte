@@ -49,9 +49,8 @@
 			>
 				<Icon icon="ri:arrow-up-line" width={24} color="black" /></button
 			>
-			<main bind:this={main} class="main flex flex-col">
-				<slot />
-			</main>
+			<main bind:this={main} class="main flex flex-col" />
 		</div>
 	</div>
 {/if}
+<slot />
