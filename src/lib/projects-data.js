@@ -1,4 +1,4 @@
-import yuvi from '$lib/assets/yuvi.png';
+import oldp from '$lib/assets/oldp.png';
 import aerolab from '$lib/assets/aerolab.png';
 import ableton from '$lib/assets/ableton.png';
 import csspatternmaker from '$lib/assets/csspattern.png';
@@ -21,6 +21,13 @@ export const projects = [
 	},
 
 	{
+		name: 'Old portfolio',
+		tools: ['Sveltekit', 'Tailwindcss', 'Supabase', 'DaisyUI', 'Gsap'],
+		description: 'Old Portfolio',
+		img: oldp,
+		link: 'https://hllorca.vercel.app/'
+	},
+	{
 		name: 'Aerolab Challenge',
 		tools: ['React'],
 		description: 'Landing page for Aerolab challenge',
@@ -33,12 +40,5 @@ export const projects = [
 		description: 'Landing page for Ableton',
 		img: ableton,
 		link: 'https://level-one-abelton-about-copy.vercel.app/'
-	},
-	{
-		name: 'La Yuvi',
-		tools: ['Sveltekit'],
-		description: 'Pizza restaurant web',
-		img: yuvi,
-		link: 'https://layuvi.vercel.app/'
 	}
 ];
