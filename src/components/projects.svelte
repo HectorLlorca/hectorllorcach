@@ -4,7 +4,7 @@
 	import { gsap } from 'gsap';
 	onMount(() => {
 		gsap.to('.box img', {
-			height: '250px',
+			height: '100%',
 			opacity: 1,
 
 			scrollTrigger: {
@@ -22,16 +22,18 @@
 		{#each projects as project}
 			<div class="flex flex-col gap-6 max-w-[530px]">
 				<a href={project.link} target="_blank" class="flex">
-					<img class=" w-full opacity-0 object-contain" src={project.img} alt="" />
+					<img class=" w-full opacity-0 object-cover" src={project.img} alt="" />
 				</a>
 				<a href={project.link} target="_blank" class="w-fit">
 					<h2 class="w-fit capitalize">{project.name}</h2>
 				</a>
 				<p>{project.description}</p>
 				<div class="flex gap-1">
-					{#each project.tools as tool}
-						<span class="badge badge-primary badge-lg">{tool}</span>
-					{/each}
+					<div class="flex flex-wrap gap-1">
+						{#each project.tools as tool}
+							<span class="badge badge-primary badge-lg">{tool}</span>
+						{/each}
+					</div>
 				</div>
 			</div>
 		{/each}
