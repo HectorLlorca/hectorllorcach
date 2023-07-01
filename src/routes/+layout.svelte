@@ -38,7 +38,7 @@
 </script>
 
 {#if $theme}
-	<div class="flex flex-col mx-auto p-3 lg:p-0 lg:py-3 relative" data-theme={$theme}>
+	<div class="flex flex-col mx-auto p-3 lg:py-3 relative" data-theme={$theme}>
 		<button
 			on:click={() => scrollTo(0, 0)}
 			class="scrollbtn btn uppercase fixed bottom-5 right-5 bg-green-400 hover:bg-green-600 hover:scale-110 rounded opacity-0 z-50"

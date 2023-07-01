@@ -8,7 +8,7 @@
 	import { theme } from '$lib/stores';
 	let tl = gsap.timeline({});
 
-	const isMobile = /Mobi/.test(navigator.userAgent);
+	$: isMobile = /Mobi/.test(navigator.userAgent);
 	let open = '';
 
 	onMount(() => {
@@ -68,7 +68,6 @@
 						? null
 						: (navigator.clipboard.writeText('hectorllorca7@gmail.com'),
 						  (open = 'tooltip tooltip-open'),
-						  console.log(open),
 						  setTimeout(() => (open = ''), 1500))}
 			>
 				<a href={isMobile ? 'mailto:hectorllorca7@gmail.com' : null} target="_blank">
@@ -102,13 +101,8 @@
 			<h1>Studies</h1>
 			<div class="flex flex-col gap-4">
 				<div class="flex flex-col">
-					<h5>CFGS DAW Web Development</h5>
-					<p class="italic">September 2019 - Juliy 2021</p>
-					<p>Institut tecnològic de Barcelona</p>
-				</div>
-				<div class="flex flex-col">
 					<h5>Front-End Bootcamp (450h)</h5>
-					<p class="italic">September 2019 - Juliy 2021</p>
+					<p class="italic">July 2023</p>
 					<p>PIMEC, Projecte SIngulars</p>
 				</div>
 				<div class="flex flex-col">
@@ -117,6 +111,11 @@
 					<a class="link" href="https://fullstackopen.com/" target="_blank"
 						>https://fullstackopen.com/</a
 					>
+				</div>
+				<div class="flex flex-col">
+					<h5>CFGS DAW Web Development</h5>
+					<p class="italic">September 2019 - Juliy 2021</p>
+					<p>Institut tecnològic de Barcelona</p>
 				</div>
 			</div>
 		</div>

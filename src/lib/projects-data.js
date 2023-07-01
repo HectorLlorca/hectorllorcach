@@ -3,8 +3,24 @@ import aerolab from '$lib/assets/aerolab.png';
 import ableton from '$lib/assets/ableton.png';
 import csspatternmaker from '$lib/assets/csspattern.png';
 import ranksball from '$lib/assets/ranksball.png';
+import donames from '$lib/assets/donames.png';
 
 export const projects = [
+	{
+		name: 'Dona+ (not desktop responsive)',
+		tools: [
+			'React',
+			'Tailwindcss',
+			'Supabase',
+			'DaisyUI',
+			'Realtime',
+			'UseContext',
+			'React Router'
+		],
+		description: 'Bootcamp final project, a web to donate old stuff, realtime chat, auth, and more',
+		img: donames,
+		link: 'https://donames.vercel.app/'
+	},
 	{
 		name: 'Css pattern maker',
 		tools: ['Sveltekit', 'Tailwindcss'],

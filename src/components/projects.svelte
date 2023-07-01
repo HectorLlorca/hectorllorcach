@@ -4,7 +4,7 @@
 	import { gsap } from 'gsap';
 	onMount(() => {
 		gsap.to('.box img', {
-			height: '100%',
+			maxHeight: '350px',
 			opacity: 1,
 
 			scrollTrigger: {
@@ -18,11 +18,11 @@
 
 <div class="flex flex-col box gap-8">
 	<h1>Projects</h1>
-	<div class=" flex flex-wrap place-content-center gap-20 md:gap-6">
+	<div class=" flex flex-wrap place-content-center gap-11 md:gap-6">
 		{#each projects as project}
-			<div class="flex flex-col gap-6 max-w-[530px]">
+			<div class="flex flex-col relative gap-6 max-w-[530px]">
 				<a href={project.link} target="_blank" class="flex">
-					<img class=" w-full opacity-0 object-cover" src={project.img} alt="" />
+					<img class=" w-full opacity-0 object-contain" src={project.img} alt="" />
 				</a>
 				<a href={project.link} target="_blank" class="w-fit">
 					<h2 class="w-fit capitalize">{project.name}</h2>
@@ -42,11 +42,12 @@
 
 <style>
 	h2 {
-		background-image: linear-gradient(black, black);
+		display: inline;
+		background-image: linear-gradient(to right, #000, #000);
 		background-size: 0% 2px;
 		background-repeat: no-repeat;
-		transition: background-size 0.3s;
-		background-position: 0 calc(100% - 2px);
+		transition: background-size 0.5s ease;
+		background-position: 0 calc(100% - 9px);
 	}
 	h2:hover {
 		background-size: 100% 2px;
