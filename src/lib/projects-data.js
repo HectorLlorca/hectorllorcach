@@ -8,6 +8,7 @@ import donames from '$lib/assets/donames.png';
 export const projects = [
 	{
 		name: 'Dona+ (not desktop responsive)',
+		date: '2023',
 		tools: [
 			'React',
 			'Tailwindcss',
@@ -23,6 +24,7 @@ export const projects = [
 	},
 	{
 		name: 'Css pattern maker',
+		date: '2023',
 		tools: ['Sveltekit', 'Tailwindcss'],
 		description: 'Web to create css patterns',
 		img: csspatternmaker,
@@ -30,6 +32,7 @@ export const projects = [
 	},
 	{
 		name: 'RanksBall',
+		date: '2023',
 		tools: ['Sveltekit', 'Tailwindcss', 'Supabase'],
 		description: 'Web to rank streetball games, chat whit other players and more',
 		img: ranksball,
@@ -38,23 +41,27 @@ export const projects = [
 
 	{
 		name: 'Old portfolio',
+		date: '2023',
 		tools: ['Sveltekit', 'Tailwindcss', 'Supabase', 'DaisyUI', 'Gsap'],
 		description: 'Old Portfolio',
 		img: oldp,
 		link: 'https://hllorca.vercel.app/'
 	},
-	{
-		name: 'Aerolab Challenge',
-		tools: ['React'],
-		description: 'Landing page for Aerolab challenge',
-		img: aerolab,
-		link: 'https://hectorllorca.github.io/aerolab-challenge-vite/'
-	},
+
 	{
 		name: 'Ableton copy',
+		date: '2023',
 		tools: ['Svelte'],
 		description: 'Landing page for Ableton',
 		img: ableton,
 		link: 'https://level-one-abelton-about-copy.vercel.app/'
+	},
+	{
+		name: 'Aerolab Challenge',
+		date: '2021',
+		tools: ['React'],
+		description: 'Landing page for Aerolab challenge',
+		img: aerolab,
+		link: 'https://hectorllorca.github.io/aerolab-challenge-vite/'
 	}
 ];
