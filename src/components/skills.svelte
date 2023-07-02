@@ -47,6 +47,9 @@
 				<button on:click={() => (skill = 'CSS')}>
 					<Icon width={55} class="cursor-pointer hover:scale-110" icon="skill-icons:css" />
 				</button>
+				<button on:click={() => (skill = 'DaisyUI')}>
+					<Icon width={55} class="cursor-pointer hover:scale-110" icon="logos:daisyui" />
+				</button>
 			</div>
 		</div>
 		<div class="flex flex-col gap-3">
