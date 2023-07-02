@@ -100,22 +100,28 @@
 		<div class=" flex flex-col gap-8 sm:max-w-[70ch] sm:mx-auto">
 			<h1>Studies</h1>
 			<div class="flex flex-col gap-4">
-				<div class="flex flex-col">
-					<h5>Front-End Bootcamp (450h)</h5>
-					<p class="italic">July 2023</p>
-					<p>PIMEC, Projecte SIngulars</p>
+				<div class="flex flex-col gap-1">
+					<div class="flex flex-col ">
+						<h5>Front-End Bootcamp (450h)</h5>
+						<p class="italic  opacity-80 text-base">February 2023 - July 2023</p>
+					</div>
+						<p>PIMEC, Projecte SIngulars</p>
 				</div>
-				<div class="flex flex-col">
-					<h5>University of Helsinki Full Stack open (MERN stack)</h5>
-					<p class="italic">September 2020 - Refreshing</p>
-					<a class="link" href="https://fullstackopen.com/" target="_blank"
+				<div class="flex flex-col gap-1">
+					<div class="flex flex-col ">
+						<h5>University of Helsinki Full Stack open (MERN stack)</h5>
+						<p class="italic  opacity-80 text-base">September 2020 - Refreshing</p>
+					</div>
+						<a class="link" href="https://fullstackopen.com/" target="_blank"
 						>https://fullstackopen.com/</a
 					>
 				</div>
-				<div class="flex flex-col">
-					<h5>CFGS DAW Web Development</h5>
-					<p class="italic">September 2019 - Juliy 2021</p>
-					<p>Institut tecnològic de Barcelona</p>
+				<div class="flex flex-col gap-1">
+					<div class="flex flex-col ">
+						<h5>CFGS DAW Web Development</h5>
+						<p class="italic  opacity-80 text-base">September 2019 - July 2021</p>
+					</div>
+						<p>Institut tecnològic de Barcelona</p>
 				</div>
 			</div>
 		</div>
