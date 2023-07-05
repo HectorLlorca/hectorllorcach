@@ -6,22 +6,22 @@ import ranksball from '$lib/assets/ranksball.png';
 import donames from '$lib/assets/donames.png';
 
 export const projects = [
-	{
-		name: 'Dona+ (not desktop responsive)',
-		date: '2023',
-		tools: [
-			'React',
-			'Tailwindcss',
-			'Supabase',
-			'DaisyUI',
-			'Realtime',
-			'UseContext',
-			'React Router'
-		],
-		description: 'Bootcamp final project, a web to donate old stuff, realtime chat, auth, and more',
-		img: donames,
-		link: 'https://donames.vercel.app/'
-	},
+	// {
+	// 	name: 'Dona+ (not desktop responsive)',
+	// 	date: '2023',
+	// 	tools: [
+	// 		'React',
+	// 		'Tailwindcss',
+	// 		'Supabase',
+	// 		'DaisyUI',
+	// 		'Realtime',
+	// 		'UseContext',
+	// 		'React Router'
+	// 	],
+	// 	description: 'Bootcamp final project, a web to donate old stuff, realtime chat, auth, and more',
+	// 	img: donames,
+	// 	link: 'https://donames.vercel.app/'
+	// },
 	{
 		name: 'Css pattern maker',
 		date: '2023',
