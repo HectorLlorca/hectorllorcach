@@ -24,13 +24,13 @@ export const projects = [
 	// 	link: 'https://donames.vercel.app/'
 	// },
 	{
-		name: 'Rick and morty Hackathon',
+		name: 'Rick and Morty Hackathon',
 		date: '2023',
 		tools: ['React', 'Tailwindcss'],
 		description:
 			'Technical test for JUMP2DIGITAL hackathon event, Rick and Morty API w/ infinite scroll and search',
 		img: rick,
-		link: 'https://hackathon-hectorllorca.vercel.app/'
+		link: 'https://jump2rickandmorty-hectorllorca.vercel.app/'
 	},
 	{
 		name: 'Css pattern maker',
