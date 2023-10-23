@@ -4,6 +4,7 @@ import ableton from '$lib/assets/ableton.png';
 import csspatternmaker from '$lib/assets/csspattern.png';
 import ranksball from '$lib/assets/ranksball.png';
 import donames from '$lib/assets/donames.png';
+import rick from '$lib/assets/rick.png';
 
 export const projects = [
 	// {
@@ -22,6 +23,15 @@ export const projects = [
 	// 	img: donames,
 	// 	link: 'https://donames.vercel.app/'
 	// },
+	{
+		name: 'Rick and morty Hackathon',
+		date: '2023',
+		tools: ['React', 'Tailwindcss'],
+		description:
+			'Technical test for JUMP2DIGITAL hackathon event, Rick and Morty API w/ infinite scroll and search',
+		img: rick,
+		link: 'https://hackathon-hectorllorca.vercel.app/'
+	},
 	{
 		name: 'Css pattern maker',
 		date: '2023',
